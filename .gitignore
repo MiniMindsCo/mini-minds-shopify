@@ -1,0 +1,93 @@
+# Mini Minds Co Shopify: repository ignore rules
+# Shopify theme source in 5-theme/ is TRACKED. Do not add theme folders here.
+
+# --- Secrets and credentials (never commit) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*secret*
+*credential*
+*.token
+.shopify/
+.shopifyignore.local
+config.local.*
+# Shopify CLI local state
+.shopify-cli/
+
+# --- Historical / non-handover material ---
+# v2.5 workbooks: historical only. Kept locally; v2.6 is the active model.
+3-data-model/source-v2.5/
+# Local workspace note only; the design lives in Claude Design.
+1-design-reference/
+
+# --- Office lock and temp files ---
+~$*
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# --- OS metadata ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# --- Editors / IDEs ---
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.sublime-workspace
+*.code-workspace
+
+# --- Node / tooling ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.pnpm-store/
+.yarn/cache/
+.cache/
+.parcel-cache/
+.turbo/
+dist/
+build/
+coverage/
+
+# --- Logs, caches, scratch, exports, archives ---
+*.log
+logs/
+tmp/
+temp/
+scratch/
+.scratch/
+exports/
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+
+# --- Design source working files (production assets only in 4-assets) ---
+*.psd
+*.psb
+*.ai
+*.sketch
+*.fig
+*.xcf

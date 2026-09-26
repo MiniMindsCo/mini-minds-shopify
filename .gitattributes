@@ -1,0 +1,15 @@
+# Normalise text line endings (Shopify theme code, docs); treat media and Office files as binary
+* text=auto eol=lf
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.xlsx binary
+*.docx binary
+*.pdf binary
